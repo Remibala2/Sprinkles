@@ -59,8 +59,8 @@ class ProductsController
        formData.append('imageUrl', imageUrl);
        formData.append('imagefile',imageObject);
 
-       fetch('http://localhost:8080/item/add',{
-       //fetch('https://rbwebproject.herokuapp.com/item/add',{
+     //  fetch('http://localhost:8080/item/add',{
+       fetch('https://sprinklesproject.herokuapp.com/item/add',{
 
          method: 'POST',
          body: formData
@@ -82,8 +82,8 @@ class ProductsController
             productController._items = [];
 console.log("Display");
             //fetch data from database using the REST API endpoint from Spring Boot
-            fetch('http://127.0.0.1:8080/item/all')
-          //fetch('https://rbwebproject.herokuapp.com/item/all')
+           // fetch('http://127.0.0.1:8080/item/all')
+          fetch('https://sprinklesproject.herokuapp.com/item/all')
                 .then((resp) => resp.json())
                 .then(function(data) {
                     console.log("2. receive data")
