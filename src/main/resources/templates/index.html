@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Homepage</title>
+  </head>
+  
+  <body>
+  <div th:insert="fragments/navbar.html :: navbar"></div>
+  <div th:insert="fragments/navbar.html :: menuModal"></div>
+
+  <!-- Masthead-->
+  <header class="masthead">
+      <div class="container my-5">
+          <div class="masthead-subheading">Welcome To Our Cake Studio!</div>
+          <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+         <h3>
+              Looking for whole cakes for an occasion or just to indulge yourself
+              in? Explore us, and know why!
+          </h3>
+          <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+          >Explore Us</a
+          >
+
+          <!--Jumbotron-->
+          <div class="container my-5">
+              <div class="jumbotron">
+                  <div
+                          id="carouselExampleControls"
+                          class="carousel slide"
+                          data-ride="carousel"
+                  >
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img
+                                      src="images\GF_Sprinkles_SpringMini_900x600.png"
+                                      class="d-block w-100"
+                                      alt="Cake1"
+                              />
+                          </div>
+                          <div class="carousel-item">
+                              <img
+                                      src="images\mm.jfif"
+                                      class="d-block w-100"
+                                      alt="Cake2"
+                              />
+                          </div>
+                          <div class="carousel-item">
+                              <img
+                                      src="images\themed.jfif"
+                                      class="d-block w-100"
+                                      alt="Cake3"
+                              />
+                          </div>
+                      </div>
+                      <a
+                              class="carousel-control-prev"
+                              href="#carouselExampleControls"
+                              role="button"
+                              data-slide="prev"
+                      >
+                <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                ></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                              class="carousel-control-next"
+                              href="#carouselExampleControls"
+                              role="button"
+                              data-slide="next"
+                      >
+                <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                ></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <!-- Services-->
+  <section class="page-section" id="services">
+      <div class="container text-center">
+          <h2 class="section-heading text-uppercase">Our Speciality</h2>
+          <h3 class="section-subheading text-muted">
+              It took us years of practice, baking for our friends’ and families’
+              birthdays to attain the level of skills to finally take in orders!
+              We’ve kept our practice to treat each and every of our customers as
+              our family and we put in love and passion in every cake we bake.
+          </h3>
+      </div>
+      <div class="section2">
+          <div class="col-md-4">
+              <img src="images\bakedwithlove.jpg" />
+              <h4 class="my-3">HandMade Freshly with Love</h4>
+              <p class="text-muted">
+                  Irresistable Handmade treats. Cakes should be delicious and a
+                  guilt-free pleasure. We strive to deliver wholesome desserts low in
+                  sugar and cream whilst not implicating the taste of our baked goods.
+                  All our bakes have no added preservatives added.
+              </p>
+          </div>
+          <div class="col-md-4">
+              <img src="images\homepage1.jfif" />
+              <h4 class="my-3">Themed and Customised to your Liking</h4>
+              <p class="text-muted">
+                  Have a specific design of cupcake you want? No problem! Send us an
+                  image of what you want on your cake, and we will make it happen for
+                  you! We offer them in bite-sized editions so that you can get to try
+                  a plethora of flavours and goodies without going overboard!
+              </p>
+          </div>
+          <div class="col-md-4">
+              <img src="images\delivery.jfif" />
+              <h4 class="my-3">Round the clock Delivery</h4>
+              <p class="text-muted">
+                  In this era and age we live in, convenience is key. Hence, we offer
+                  prompt island-wide delivery service. Hassle free midnight surprises
+                  made possible. We deliver via hourly time slots 24/7, and we are
+                  always on time.
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <!-- About
+  <section class="page-section" id="about">
+      <div class="container">
+          <div class="text-center">
+              <h3 class="section-heading text-uppercase">About Sprinkles</h3>
+              <div class="timeline-body"><p class="text-muted">---------</p></div>
+          </div>
+          <ul class="timeline">
+              <li>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/mission.png" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+
+                          <h4 class="subheading">Our Mission</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted">We endeavor to provide family of our customers with nutritious and quality cakes at reasonable prices. We are internally aligned and externally focused to provide outstanding customer service and believe customer satisfaction is our ultimate goal!</p></div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/vision.png" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+
+                          <h4 class="subheading">Our Vision</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted"><ul>
+                          <li><b>Craftsmanship: </b>Honor the tradition, Revere the product, Hone our skills</li>
+                          <li><b>Integrity:     </b>Do what's right, Make quality products, Respect one another</li>
+                          <li><b>Teamwork:      </b>Be cooperative, Coordinate our skills, Rely on one another</li>
+                      </ul></p></div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/values.png" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+
+                          <h4 class="subheading">Our Values</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted">We are and want to stay addicted to creating products full of taste and personality, that bring pleasure and emotion in people’s lives and value to our partners.
+                          maintaining quality standards and restlessly searching for new ways to make them happy.</p></div>
+                  </div>
+              </li>
+              <!--   <li class="timeline-inverted">
+                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                     <div class="timeline-panel">
+                         <div class="timeline-heading">
+                             <h4>July 2020</h4>
+                             <h4 class="subheading">Phase Two Expansion</h4>
+                         </div>
+                         <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                     </div>
+                 </li> -->
+              <li class="timeline-inverted">
+                  <div class="timeline-image">
+                      <h4>
+                          Be Part
+                          <br />
+                          Of Our
+                          <br />
+                          Story!
+                      </h4>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+-->
+  <div th:insert="fragments/footer.html :: footer"></div>
+         <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

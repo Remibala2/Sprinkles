@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#ProdPagejumbotron {
+height: 200px;
+  text-align: center;
+  text-color: white;
+  background-image: url('../images/header2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbotron
+{
+margin-top: 0;
+padding: 5px;
+}
+
+.dropdown button {
+  background-color: white;
+  color: black;
+  text-align: justify;
+  border-radius: 10%;
+  width: fit-content;
+}
+
+.row img {
+  display: flex;
+  height: 16rem;
+  width: auto;
+  border: none;
+}
+
+.row {
+  display: flex;
+  margin: 16px;
+  padding: 30px;
+  height: 100rem;
+}
+
+.dropdown {
+  margin: 0 0 0 5rem;
+}
+
+.alert {
+  text-align: center;
+  animation: infinite;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  font-family: cursive;
+  background-color: lightyellow;
+}
+/*
+#ProdPageJumbotron {
+  display: flex;
+  margin: 12px 0 0 0;
+  position: inherit;
+  background-image: url('../images/contactus.jfif');
+  height: 250px;
+  color: pink;
+  justify-content: center;
+}
+*/
+.pagination {
+  margin: 30px 500px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+}
+
+/*.display-5 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: monospace;
+  text-decoration: underline;
+  font-style: italic;
+}*/
+
+.display-4 {
+  color: white;
+  font-style: italic;
+
+}
+.modal-body {
+height: 500px;
+
+}
+
+#modalName {
+  font-family: cursive;
+  font-size: 30px;
+  color: black;
+}
+
+#modalClose {
+  font-family: cursive;
+  font-size: 15px;
+  border-style: hidden;
+  background-color: teal;
+}
+
+#back-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: lightcoral; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 75%; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+}
+
+#back-top:hover {
+  background-color: pink; /* Add a dark-grey background on hover */
+}
+@media only screen and (max-width: 600px) {
+  .alert,
+  #ProdPageJumbotron,
+  footer,
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: xx-small;
+  }
+  /* footer {
+    display: flex;
+    flex-direction: column;
+  }*/
+  .alert,
+  .page {
+    display: none;
+  }
+
+  #ProdPageJumbotron .display-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer #Location,
+  #ContactUs,
+  #OpeningHours {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .alert,
+  #ProdPageJumbotron,
+  footer,
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: xx-small;
+  }
+  /* footer {
+      display: flex;
+      flex-direction: column;
+    }*/
+  .alert,
+  .page {
+    display: none;
+  }
+
+  #ProdPageJumbotron .display-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  }

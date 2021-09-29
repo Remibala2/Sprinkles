@@ -1,0 +1,69 @@
+.jumbotron
+{
+  display: flex;
+  padding: 32px 24px;
+  display: flex;
+  width: 100%;
+}
+
+img {
+  width: 40%;
+  height: 620px;
+  padding: 20px;
+}
+
+#newItemForm
+{
+width: 300rem;
+padding: 30px 100px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ffc800;
+  border-color: #ffc800;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  height: 50px;
+  font-size: 20px;
+  font-style: bolder;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #d9aa00;
+  border-color: #cca000;
+}
+
+@media only screen and (max-width: 600px)
+{
+img
+{
+display: none;
+}
+#newItemForm
+{
+width: 100%;
+padding: 0;
+}
+
+.btn-primary {
+  margin-bottom: 100px;
+}
+}
+
+
+@media only screen and (max-width: 900px) {
+img
+{
+display: none;
+}
+#newItemForm
+{
+width: 100%;
+padding: 0;
+}
+.btn-primary {
+  margin-bottom: 100px;
+}
+}
