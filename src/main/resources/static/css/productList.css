@@ -48,6 +48,7 @@ background-color: white;
 }
 
 .alert {
+margin:100px;
   text-align: center;
   animation: infinite;
   font-size: 14px;
