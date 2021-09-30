@@ -12,7 +12,7 @@ const createHTMLList = (index, name, description, imageURL) =>
         <h5 class="card-title">${name}</h5>
      <p class="card-text" style="height: 5rem;">${description}</p>
 
-        <a id="${index}" href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal">Read More</a>
+        <a id="${index}" href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#productModal">Read More</a>
     </div>
 </div>
 </div>
