@@ -4,13 +4,13 @@
 
 const createHTMLList = (index, name, description, imageURL) =>
 `
-<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="col-12 col-md-6 col-lg-3 mb-4">
 <div class="card" style="width: 20rem;">
     <img src=${imageURL} class="card-img-top"
         alt="image">
     <div class="card-body">
         <h5 class="card-title">${name}</h5>
-     <p class="card-text" style="height: 5rem;">${description}</p>
+     <p class="card-text-price">$${price.toFixed(2)}</p>
 
         <a id="${index}" href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#productModal">Read More</a>
     </div>
@@ -112,6 +112,7 @@ console.log("Display");
     renderProductPage()
     {
         var productHTMLList = [];
+         var temp = []; // create new array for the filter
 
         for (var i=0; i<this._items.length; i++)
         {
