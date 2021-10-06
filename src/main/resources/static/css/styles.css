@@ -120,7 +120,7 @@ font-size: smaller;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: yellow;
+
   }
   .fixed-top {
     position: fixed;
