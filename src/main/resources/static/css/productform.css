@@ -13,6 +13,18 @@ img {
   margin: 10px;
 }
 
+.navbar-brand {
+font-size: 28px;
+background-color: #ff4a4a;
+font-family: "Great Vibes", cursive;
+line-height: 50px;
+font-weight: normal;
+margin-bottom: 0px;
+margin-top: 1px;
+text-align: center;
+text-shadow: 0 1px 1px #fff;
+}
+
 #newItemForm
 {
 width: 300rem;
@@ -48,6 +60,8 @@ width: 100%;
 padding: 0;
 margin: 5px;
 }
+
+
 
 .btn-primary {
   margin-bottom: 100px;

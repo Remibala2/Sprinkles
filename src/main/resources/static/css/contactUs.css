@@ -22,6 +22,18 @@ section#contact {
     color: white;
     }
 
+    .navbar-brand {
+    font-size: 28px;
+    background-color: #ff4a4a;
+    font-family: "Great Vibes", cursive;
+    line-height: 50px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    }
+
 #contactform
 {
 width: 120rem;
