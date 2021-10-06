@@ -5,9 +5,15 @@ body {
 .text-center {
   text-align: center !important;
 }
+
+.loginpagejumbotron
+{
+background-color: cornsilk;
+}
+
 #loginpage
 {
-margin-top: 40px;
+margin-top: 50px;
 }
 
 .navbar-brand {

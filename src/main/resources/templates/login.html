@@ -9,13 +9,18 @@
 
 <div th:insert="fragments/navbar.html :: navbar"></div>
 
+<div id="loginpagejumbotron" class="container-fluid jumbotron">
+    <!--<h3 class="display-5">Sprinkles</h3>-->
+    <h1 class="display-4">Admin Login</h1>
+</div>
+
 <!-- Login Form -->
 <div class="container" id="loginpage">
     <br/>
     <div class="row">
         <div class="col-lg-8 col-md-10 col-sm-12"></div>
         <div class="col-lg-8 col-md-10 col-sm-12">
-            <h2>Login</h2>
+            <h2></h2>
 
             <div th:if="${param.error}">
                 Invalid username and password.
